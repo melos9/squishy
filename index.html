@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#ffd9e8" />
+  <title>もちもち Squishy ぷにぷに</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="stage"></canvas>
+
+  <header class="hud hud-top">
+    <h1 class="title">もちもち <span>Squishy</span></h1>
+    <p class="hint">ドラッグでのばして、はなすとぷるぷる。タップでぷにっ。</p>
+  </header>
+
+  <nav class="hud hud-bottom" aria-label="操作パネル">
+    <button class="btn" id="addBtn" type="button">＋ もちを追加</button>
+    <button class="btn" id="gravityBtn" type="button" aria-pressed="true">⬇ 重力: ON</button>
+    <button class="btn" id="soundBtn" type="button" aria-pressed="true">🔊 音: ON</button>
+    <button class="btn" id="resetBtn" type="button">↺ リセット</button>
+  </nav>
+
+  <div class="counter" id="counter" aria-hidden="true"></div>
+
+  <script src="app.js?v=4"></script>
+</body>
+</html>
